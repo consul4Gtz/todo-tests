@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+<t t-name="oxp.Layout">
+  <div class="o-action">
+    <div class="o-control-panel d-flex align-items-center">
+      <!-- tiene dos slots , control panel y default cada una hace referencia  a la plantilla contacts xml-->
+      <t t-slot="control-panel"/>
+    </div>
+    <div class="o-content" t-att-class="props.contentClass">
+      <t t-slot="default"/>
+    </div>
+  </div>
+</t>
+
+</templates>
